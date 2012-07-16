@@ -1,0 +1,25 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="extjs/resources/css/ext-all.css">
+	<script type="text/javascript" src="extjs/ext-all.js"></script>
+	
+	<script type="text/javascript" src="swfobject/swfobject.js"></script>
+</head>
+<body></body>
+	<script type="text/javascript">
+	Ext.onReady(function(){
+		var win = Ext.widget('window', {
+		    title: "Flash animation inside an ExtJS 4 Component!",
+		    layout: 'fit',
+		    width: 700,
+		    height: 500,
+		    resizable: true,
+		    items: {
+		        xtype: 'flash',
+		        url: 'airballoon/AIRBALLOON.swf'
+		    }
+		});
+		win.show();
+	});
+	</script>
+</html>
